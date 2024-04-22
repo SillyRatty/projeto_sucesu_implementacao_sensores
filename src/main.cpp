@@ -83,9 +83,9 @@ void update_sheet(String pacient_id, double temperature, uint8_t oxigen, float h
 
             Serial.print(counter);
             sprintf(buffer, "values/[0]/[4]");
-            valueRange.set(buffer, roundf(heart_rate*100)/100);
+            valueRange.set(buffer, String(roundf(heart_rate*100)/100));
             sprintf(buffer, "values/[0]/[3]");
-            valueRange.set(buffer, oxigen);
+            valueRange.set(buffer, String(oxigen));
             sprintf(buffer, "values/[0]/[2]");
             valueRange.set(buffer, pacient_id);
             sprintf(buffer, "values/[0]/[1]");
