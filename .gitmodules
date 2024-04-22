@@ -1,0 +1,3 @@
+[submodule "lib/Adafruit-MLX90614-Library"]
+	path = lib/Adafruit-MLX90614-Library
+	url = https://github.com/adafruit/Adafruit-MLX90614-Library.git
